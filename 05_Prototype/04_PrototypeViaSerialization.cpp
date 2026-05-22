@@ -1,6 +1,4 @@
-#include <memory>
-#include <string>
-using namespace std;
+#include "../header.h"
 
 #include <boost/serialization/serialization.hpp>
 #include <boost/archive/text_iarchive.hpp>

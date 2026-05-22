@@ -1,7 +1,4 @@
-#include <iostream>
-#include <math.h>
-
-using namespace std;
+#include "../header.h"
 
 class Point{
     Point(float x, float y) : x(x), y(y) {}

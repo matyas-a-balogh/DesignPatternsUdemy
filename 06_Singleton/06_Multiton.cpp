@@ -1,8 +1,4 @@
-#include <map>
-#include <iostream>
-#include <memory>
-
-using namespace std;
+#include "../header.h"
 
 // its not really linked to singleton
 // it sets up key-value store

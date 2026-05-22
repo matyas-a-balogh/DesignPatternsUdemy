@@ -1,9 +1,6 @@
-#include <string>
-#include <map>
-#include <iostream>
-#include <fstream>
+#include "../header.h"
 #include <boost/lexical_cast.hpp>
-using namespace std;
+
 using namespace boost;
 
 

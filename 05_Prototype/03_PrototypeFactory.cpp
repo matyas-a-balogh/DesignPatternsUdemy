@@ -1,7 +1,4 @@
-#include <memory>
-#include <string>
-
-using namespace std;
+#include "../header.h"
 
 struct Address{
     string street, city;

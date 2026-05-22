@@ -1,8 +1,4 @@
-#include <string>
-#include <map>
-#include <iostream>
-#include <fstream>
-#include <vector>
+#include "../header.h"
 
 #include <boost/lexical_cast.hpp>
 #include <gtest/gtest.h>

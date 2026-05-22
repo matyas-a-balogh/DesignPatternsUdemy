@@ -1,7 +1,4 @@
-#include <iostream>
-#include <math.h>
-
-using namespace std;
+#include "../header.h"
 
 class Point{
     // encapsulation - we want to hide the implementation details of the class -- oop move

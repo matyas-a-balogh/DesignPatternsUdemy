@@ -1,11 +1,7 @@
-#include <string>
-#include <iostream>
+#include "../header.h"
 #include "utils/di.hpp"
-#include <memory>
-
 #include <boost/lexical_cast.hpp>
 
-using namespace std;
 using namespace boost;
 
 struct IFoo
