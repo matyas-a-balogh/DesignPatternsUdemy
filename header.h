@@ -5,5 +5,8 @@
 #include <vector>
 #include <math.h>
 #include <memory>
+#include <array>
+#include <numeric>
+#include <algorithm>
 
 using namespace std;
