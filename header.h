@@ -8,5 +8,9 @@
 #include <array>
 #include <numeric>
 #include <algorithm>
+#include <cstdint>
+#include <sstream>
+#include <concepts>
+#include <functional>
 
 using namespace std;

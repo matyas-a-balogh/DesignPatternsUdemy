@@ -21,7 +21,7 @@ struct Circle : GraphicObject
 struct Group : GraphicObject
 {
     string name;
-    // Group can conotain other GraphicObjects
+    // Group can contain other GraphicObjects
     vector<GraphicObject*> objects;
 
     Group(const string& name) : name(name) {}
@@ -39,19 +39,29 @@ int main()
 {
     // Composite: a complex object is built from smaller objects using the same interface.
     Group root("root");
-    Circle c1, c2;
+    Circle c1, c2, c3;
     root.objects.push_back(&c1);
 
     Group subgroup("sub");
     root.objects.push_back(&subgroup); // order can be changed here
     subgroup.objects.push_back(&c2);
+    subgroup.objects.push_back(&c3);
 
     root.draw();
+
+    /*
+    The `draw()` in `09_Composite/01_Introduction.cpp:29` is recursive, not flattened:
+    - `root.draw()` prints `root`
+    - then draws `c1`
+    - then draws `sub`
+    - and `sub.draw()` prints its own children
+     */
 
     /*
     root
     ├── c1
     └── sub
-        └── c2
+        ├── c2
+        └── c3
     */
 }
