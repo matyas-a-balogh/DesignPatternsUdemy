@@ -90,7 +90,7 @@ int main()
     cout << my_square.str() << endl;
 
     
-    // you can makd a ColoredShape{ColoredShape{ColoredShape{...}}}
+    // you can make a ColoredShape{ColoredShape{ColoredShape{...}}}
     Square square2{10};
     ColoredShape blue{square2, "blue"};
     ColoredShape red{blue, "red"};

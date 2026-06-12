@@ -1,13 +1,11 @@
 #include "../header.h"
 
 
-struct Flower
-{
+struct Flower{
     virtual string str() = 0;
 };
 
-struct Rose : Flower
-{
+struct Rose : Flower{
     string str() override {
         ostringstream oss;
         oss << "A rose";
@@ -15,44 +13,28 @@ struct Rose : Flower
     }
 };
 
-struct RedFlower : Flower
-{
+struct RedFlower : Flower{
     Flower& flower;
+    string color = "red";
 
     RedFlower(Flower& flower) : flower(flower) {};
 
     string str() override {
         ostringstream oss;
-        if (flower.str() == "A rose that is blue"){
-            oss << "A rose that is blue and red";
-        }
-        else if (flower.str() == "A rose that is red and blue"){
-            oss << "A rose that is red and blue";
-        }
-        else{
-            oss << "A rose that is red";
-        }
+        oss << flower.str() << " that is " << color;
         return oss.str();
     }
 };
 
-struct BlueFlower : Flower
-{
+struct BlueFlower : Flower{
     Flower& flower;
+    string color = "blue";
 
     BlueFlower(Flower& flower) : flower(flower) {};
 
     string str() override {
         ostringstream oss;
-        if (flower.str() == "A rose that is red"){
-            oss << "A rose that is red and blue";
-        }
-        else if (flower.str() == "A rose that is blue and red"){
-                    oss << "A rose that is blue and red";
-        }
-        else{
-            oss << "A rose that is blue";
-        }
+        oss << flower.str() << " that is " << color;
         return oss.str();
     }
 };
@@ -73,8 +55,8 @@ int main()
     cout << blue_rose.str() << endl;          // "A rose that is blue"
     cout << red_red_rose.str() << endl;       // "A rose that is red"
     cout << blue_blue_rose.str() << endl;     // "A rose that is blue"
-    cout << red_blue_rose.str() << endl;      // "A rose that is blue and red"
     cout << blue_red_rose.str() << endl;      // "A rose that is red and blue"
-    cout << blue_red_blue_rose.str() << endl; // "A rose that is blue and red"
+    cout << red_blue_rose.str() << endl;      // "A rose that is blue and red"
     cout << red_blue_red_rose.str() << endl;  // "A rose that is red and blue"
+    cout << blue_red_blue_rose.str() << endl; // "A rose that is blue and red"
 }
