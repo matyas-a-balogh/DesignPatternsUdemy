@@ -12,5 +12,6 @@
 #include <sstream>
 #include <concepts>
 #include <functional>
+#include <cstring>
 
 using namespace std;
