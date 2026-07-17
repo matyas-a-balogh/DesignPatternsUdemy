@@ -13,5 +13,6 @@
 #include <concepts>
 #include <functional>
 #include <cstring>
+#include <algorithm>
 
 using namespace std;

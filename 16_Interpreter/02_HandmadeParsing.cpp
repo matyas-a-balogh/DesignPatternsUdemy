@@ -1,3 +1,14 @@
+// Lexing turns text into a set of tokens, e.g.
+// 3*(4+5) -> Lit[3] Star Lparen Lit[4] Plus Lit[5] Rparen
+//
+// Parsing tokens into meaningful constructs
+// -> MultiplicationExpression[
+//      Integer[3],
+//      AdditionExpression[
+//        Integer[4], Integer[5]
+//      ]
+//    ]
+
 #include "../header.h"
 #include <boost/lexical_cast.hpp>
 
