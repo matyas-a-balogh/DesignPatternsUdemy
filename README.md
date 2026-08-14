@@ -18,3 +18,5 @@ During the course I not only learnt DP-s, but I also discovered:
 - how to configure Zed with `Task`-s and shortcuts
 
 At last, I created a `Summary` folder, where I summarize the key concepts and patterns learned throughout the course. Each design pattern is explained with its purpose, structure, and real-world examples. This serves as a quick cheat-sheet for reference, when needed.
+
+Note: OOP is like icons and when you click on them, it gives you options what can they execute and tells you the actual numbers it have.
